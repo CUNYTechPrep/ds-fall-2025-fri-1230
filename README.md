@@ -88,16 +88,14 @@ _*Syllabus and topics are subject to change_
 0. Now you are ready to start from step 0, by making new branch for the current week and do the work like described above in order. Happy coding!
 
 ## Homework Submission
-- All homework is due at 12:01pm (noon) the day before the next class
+- All homework is due Thursday 12:00 PM before class (Friday 12:30 PM)
 - Submit GitHub PR links to your completed exercises
 # Homework Instructions: How to hand in your HWs.
 __HW assignments can be found in that each weeks README.md file. Open that weeks folder to find assignment__
 
-__All HWs are due at 12:01pm (noon) the day before the next class__
+__All HWs are due Thursday 12:00 PM before class (Friday 12:30 PM)__
 
-* Tue class:  HW due 12:01pm on Mon
-* Wed class: HW due 12:01pm on Tue
-* Fridays (both):  HW due 12:01pm on Thr
+* Friday class: HW due Thursday 12:00 PM
 
 __Submit your HW assignments to the form below:__
 * [Main HW submission form](https://forms.gle/Ea1TnJ6D2NT6otBV9)
