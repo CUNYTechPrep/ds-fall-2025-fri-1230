@@ -9,7 +9,7 @@
 
 
 
-## Homework
+## Homework (Due Thursday 12:00 PM before class)
 0. Make a team of 3-4 people from THIS CLASS ONLY.  
 0. Make slack channel ... 
 0. etc...
