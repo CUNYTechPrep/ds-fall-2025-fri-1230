@@ -17,8 +17,8 @@
 0. Finish Github Setup
 
 
-# Homework Due Monday [~2.25 hrs to complete]
-**Tuesday's class:  HW is due 12:01pm on the Monday before next class begins.**
+# Homework Due Thursday 12:00 PM [~2.25 hrs to complete]
+**Friday's class: HW is due Thursday 12:00 PM before class begins.**
 
 ## 1. Update Slack Profile with real photo and name.
 
