@@ -1,98 +1,73 @@
-# Week 2; WTF is DS and Finding Data Cleaning 
+# Week 2; Pandas Part 2
 
 ## Agenda 
 0. Remind me to 
 	* Start recording
 	* Turn on CC's 
 	* Enable screen sharing for everyone (for breakout rooms)
+0. Annoucments
+    * Goolge Workshop on Data Privacy (CTP Fellow Exclusive).  [All info on slack here.](https://ctpc11.slack.com/archives/C095CMC2JGG/p1756821811976879)
+    * [RSVP Here ASAP](https://forms.gle/ZrBuqaD3G9FkULK2A)
 0. Best way to ask questions on slack. 
     * Include a full screen shot of your error message and the code to get the error.  
     * "What did you do to debug this already?"
         * *Directly from Meta*
-
-0. Review HW  [15min]
-    * Review exemplary LinkedIn 
+0. Review HW [15min]
     * Best Slack message. 
     * Share screen HW check, one error you encountered. 
-0. [Google Slide Lecture](https://docs.google.com/presentation/d/1uoWIMjfH70CUrHKJnckMfd6ppQTxFwDKFlonHElwpTQ/edit) [20-30min]
+0. Complete Pandas Lecture/s (Last & This Week)
+0. ~~[Google Slide Lecture](https://docs.google.com/presentation/d/1uoWIMjfH70CUrHKJnckMfd6ppQTxFwDKFlonHElwpTQ/edit)[20-30min]~~
 0. BREAK
 0. Finding Data Live Demo [20min]
     * [Google Doc of good data sources](https://docs.google.com/document/d/1VvmTmHrURfV24owFeew33S8INOLE9iNnRFXntSFhZdc/edit) <-- please contribute
 0. Cleaning Data Lecture.ipynb [45min]
-0. Github how to sync the upstream. 
+0. SECRET STUFF
+1. Github / LinkedIn [Fellow Information Form](https://forms.gle/WVDjDFvEqciYTfwC7)
 0. Review whats due for next week 
-0. Weekly survey. 
+0. Weekly survey.
+1. After Class Slack Message
 
 
-# HW DUE [~1.5hrs]
+# Homework [~1.5hrs]
+_All HW's are due 1 day before the next class begins by 12:01pm (Noon)._  
+_Submit them via the [HW Submssions Form](https://forms.gle/MFH173MZaQ5TquCB6)_  
 
-### Pre-Class for Next Weeks Analytics Lecture [~30min]
-0. Watch its official Ted (not TedX) lecture on [storytelling with data](https://www.youtube.com/watch?v=hVimVzgtD6w&ab_channel=TED) [20min]
-0. And this one too? [4min] [BBC: Joy of Stats](https://www.youtube.com/watch?v=jbkSRLYSojo&ab_channel=BBC)
-0. [Joy of stats playlst](https://www.youtube.com/watch?v=hUGUWr-TjR8&list=PL4F9E80BCF687CBA6&index=2&ab_channel=OpenLearnfromTheOpenUniversity)
-0. Joy of stats full[https://www.gapminder.org/videos/the-joy-of-stats/]
+### Pre-Class for Next Weeks Analytics Lecture [~30min] & Slack Message #2
 
-<!-- 0. Create [Tableau Public account](https://public.tableau.com/app/discover)
-0. [Watch these eight 2min videos](https://public.tableau.com/app/learn/how-to-videos) on getting started with Tableau
-0. Create new project. 
-0. Load in the `data/listings.csv` into that project.
-0. Post in Slack thread 1 thing you learned about the video or Tableau.  -->
+0. [Storytelling with data](https://www.youtube.com/watch?v=hVimVzgtD6w&ab_channel=TED) Ted (not TedX). [20min]
+0. [BBC: Joy of Stats](https://www.youtube.com/watch?v=jbkSRLYSojo&ab_channel=BBC) [4min]
+0. [Seaborn Tutorial](https://www.youtube.com/watch?v=LnGz20B3nTU&ab_channel=AbsentData) [15min]
+0. [Charts in Seaborn](https://www.youtube.com/watch?v=Iui04c3tbH8&ab_channel=FaniloAndrianasolo) [4min]
+0. Optional: [Joy of stats full documentary](https://www.gapminder.org/videos/the-joy-of-stats/) [1hr]
+
+After watching the following videos above... 
+* Post image in this weeks slack thread with one data viz YOU loved or YOU hated and why you felt that way.
+	* _(I'm looking for the story and impact it had on your life.)_
+* Submit link to slack message in HW Submission Sheet.
+
+
+
+### Build your first dashboard. 
+0. Use these Article + YouTube Tutorial + GitHub code on [How to build a dashboard in Streamlit](https://blog.streamlit.io/crafting-a-dashboard-app-in-python-using-streamlit/) [~45 mins]
+1. Submit the link to your DELPLOYED dashboard in the _HW Submission Sheet_
+2. _Link should look something like this https://population-dashboard.streamlit.app/_
 
 
 ### Exercise [~45min]
 0. MAKE A COPY of the Exercise file. 
 0. Complete the questions. 
-0. Save and push to github
-0. Paste link your HW Submission sheet. 
-
-### LinkedIn Post [~10min]
-__Submit by putting the link to your LI post under the "LinkedIn Post" column.__
-
-This week, your post can be about something you found and like that is related to your field of interest. 
-
-* Post a video, article, paper or another LinkedIn post you liked say/describe why you liked it. 
-    * 'commenting' on another post does not count. 
-    * you can repost instead. 
-    * Maybe do a poll.
+0. Create Pull Request
+* Submit link to your exercise file in the HW Submssion Sheet. 
 
 
-# Updating your Fork
-Now that there are new files in the main fork, you will need to pull those files into your fork.
-
-
-#### Setting upstream
-0. Adding upstream.  Run this again just incase
-    * `git remote add upstream https://github.com/CUNYTechPrep/2024-DS-Fri-1230.git`
-	* If it says `fatal: remote upstream already exists.` That is GOOD and means you listened the first time and already added the upstream.
-
-#### Getting new files by pulling or fetching and merging. 
-0. Try doing `git pull` that works for 20% of students. 
-0. Else, if `git pull` doesn't work...
-0. Fetch the new files
-	* `git fetch upstream` 
-0. Merge/download the newly added files.
-	*  `git merge upstream/main`
-	* If a crazy screen comes up that looks like this, just type `:wq` then hit `enter` to close it and you should be fine.
-    
-    <img src="https://github.com/zd123/images-for-class/blob/main/forking-image-instructions/98-strange-screen.png?raw=true" width="55%">  
-    
-    Just type `:wq` then hit `enter` on your keyboard.  It should close that window. 
-0. Now check that the new files are in your repo.
-#### Adding the new files into your repo. 
-As of right now, the files are on your local machine, but not in your repo yet.  
-
-0. Run `git stuats` and you will see a bunch of new green files.
-0. Add all of the files from the new week. 
-    * `git add Week-02-DS-Overview-and-Data/*`
-    * `git commit -m 'adding week 2 files'`
-    * `git push`
-
-<br>
+_[end of hw section]_
+---
 <br>
 <br>
 <br>
 
-# Finding Data in the Wild
+# IF TIME... 
+## Finding Data in the Wild
 
 #### Finding Data your project. 
 0. Here we are going to mock data for a project about dogs. 
@@ -116,63 +91,3 @@ As of right now, the files are on your local machine, but not in your repo yet.
     - I did, copy and paste into sublime and did removing whitespace tricks in there. 
     - Then copy and did pd.read_clipboard() which works very well. 
 0. Now load that data into the notebook and flow into the data cleaning lecture. 
-
-
-## Cleaning data topics
-0. Loading data, csvs, tsv, .zip, excels, clipboard, sql db
-0. Whats the deal with missing values and NaNs. 
-    * Identifying NaNs None 
-    * dropping NaNs
-    * Filling NaNs
-0. Duplicate Rows
-0. Annoying headers 
-0. Dates
-0. Numbers [TODO]
-    * Numbers with commas 
-    * Money Symbols
-    * Percent symbols
-    * Postal codes (numbers starting with 0)
-
-0. String Stuff
-    * splitting strings in columns
-    * STRIPPING and REPLACING
-    * Quotes
-    * regex
-0. Iterating through columns.
-0. Iterating through rows. 
-
-0. Exporting data and the infamous `Unnamed:` 
-0. Multiple Datatypes in One Column [more help here](https://realpython.com/python-data-cleaning-numpy-pandas/#tidying-up-fields-in-the-data) and [here](https://www.osedea.com/insight/data-cleaning-with-python)
-
-
-0. Delimiters
-6. JSONs and Dictionaries 
-0. Loading multiple files [nice to have]
-7. Loading files from web. [do in intro]
-9. Quickly throwing in sheets. [`pd.to_clipboard()`]
-6. Encoding [nice to have] 
-
-
-
-
-# HW Assignment
-Due 1 day before class at 12:01pm (Noon).
-
-## Pre-Class Videos
-1. Watch this 
-2. Do this tutorial 
-
-
-## Exercise
-0. Make a copy of the exercise file (see instructions above).
-0. Complete the code in your new copy of the exercise file. 
-0. Push that file to your fork. 
-0. Copy that exact link, and paste it into the HW submission sheet. 
-
-
-## LinkedIn Post
-
-
-
-### Other shit
-[NYC Open Data proposals](https://2025.open-data.nyc/) due Nov 1st.
