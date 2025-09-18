@@ -209,6 +209,65 @@ def main() -> None:
         fig3.update_layout(xaxis_title="Movie Release Year", yaxis_title="Average Rating")
         st.plotly_chart(fig3, use_container_width=True)
 
+    with tabs[2]:
+        st.subheader("Q3: How does mean rating change across movie release years?")
+        st.caption("Interactive line chart of mean rating by release year.")
+
+        # Controls
+        min_year, max_year = int(df["year"].min()), int(df["year"].max())
+        year_range = st.slider(
+            "Year range",
+            min_value=min_year,
+            max_value=max_year,
+            value=(min_year, max_year),
+            step=1,
+        )
+        col1, col2 = st.columns([1, 1])
+        with col1:
+            min_count_year = st.number_input(
+                "Minimum ratings per year",
+                min_value=0,
+                max_value=100000,
+                value=50,
+                step=10,
+            )
+        with col2:
+            smooth_window = st.slider(
+                "Rolling mean window (years)", min_value=1, max_value=9, value=1, step=1
+            )
+
+        # Aggregate by year
+        year_stats = (
+            df.groupby("year", dropna=False)
+            .agg(mean_rating=("rating", "mean"), n_ratings=("rating", "size"))
+            .reset_index()
+        )
+        # Filter by selected range and min count
+        lo, hi = year_range
+        mask = (year_stats["year"] >= lo) & (year_stats["year"] <= hi)
+        year_filtered = year_stats[mask & (year_stats["n_ratings"] >= min_count_year)].copy()
+        year_filtered = year_filtered.sort_values("year")
+
+        # Optional smoothing
+        if smooth_window and smooth_window > 1 and not year_filtered.empty:
+            year_filtered["mean_rating_smoothed"] = (
+                year_filtered["mean_rating"].rolling(window=smooth_window, center=True).mean()
+            )
+        else:
+            year_filtered["mean_rating_smoothed"] = year_filtered["mean_rating"]
+
+        fig3 = px.line(
+            year_filtered,
+            x="year",
+            y="mean_rating_smoothed",
+            hover_data={"n_ratings": True, "mean_rating": ":.2f"},
+            title="Movie Release Year vs Average Rating",
+        )
+        fig3.update_layout(xaxis_title="Movie Release Year", yaxis_title="Average Rating")
+        st.plotly_chart(fig3, use_container_width=True)
+
+
+
     with tabs[3]:
         st.subheader("Q4: Top movies by average rating (interactive)")
         st.caption("Horizontal bar chart of top movies; size = number of ratings.")

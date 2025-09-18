@@ -3,7 +3,7 @@
 ## Agenda
 0. Remind me to start recording
 0. CC Lecture [link to slides]
-0. First 5 vollys get to pitch their idea [Match Making Slides](https://docs.google.com/presentation/d/15dKy4DA3uGoQfVNo6KxRlTG8TmajlcNwxCbDfY0r_v8/edit?usp=sharing)
+0. First 5 vollys get to pitch their idea [Match Making Slides]()
 0. [SCRUM Lecture Slides](https://docs.google.com/presentation/d/1G-7RNgZinNdX1FChukCllxV07ioiHQRA7gaxPV6eYHw/edit?usp=sharing)
 0. FOR NEXT WEEKS LECTURE WE NEED A GITHUB PR DEMO THING. 
 

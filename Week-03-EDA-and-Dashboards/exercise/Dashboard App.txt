@@ -1,6 +1,0 @@
-Link to directory with my app: https://github.com/Demianiuk-Mykola/DashboardEx_w3
-Link to the running application on Streamlit: https://movierating.streamlit.app/
-
-It might be asllep. Streamlit puts its hosting of the application asleep after 12-hours of inactivity:
-Application is created by me in a separate directory to prevent conflicts.
-
